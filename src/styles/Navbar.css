@@ -1,0 +1,73 @@
+@import '../styles/App.css';
+nav{
+    background-color: var(--color1);
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    width: 100vw;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+nav .list{
+    display: flex;
+    align-items: center;
+}
+nav .list-items{
+    display: flex;
+    align-items: center;
+}
+nav .list-items .items{
+    padding: 0 15px;
+    font-size: 17px;
+}
+nav .items .nav-links{
+    color: var(--color3);
+}
+nav .items .nav-links.active{
+    color: var(--color4);
+}
+nav .items .nav-links:hover{
+    border: 2px solid var(--color4);
+    border-radius: 6px;
+    padding: 6px;
+}
+.toggle-btn{
+    font-size: 26px;
+    font-weight: 600;
+    margin-left: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    nav .list-items{
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 70px;
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        background-color: var(--color1);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition: all 0.3s ease;
+    }
+    nav .list-items .items{
+        padding: 20px 25px;
+       letter-spacing: 2px;
+       width: 100%;
+    }
+    nav .items .nav-links:hover{
+        padding: 6px 35px 6px 6px;
+    }
+    .toggle-btn{
+        display: flex;
+    }
+}
+@media screen and (max-width: 480px) {
+    nav .list-items{
+        width: 100%;
+    }
+}
