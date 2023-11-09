@@ -1,7 +1,16 @@
 import { Link, NavLink } from "react-router-dom"
 import '../../styles/Navbar.css'
 import { BsJustify } from "react-icons/bs";
+import { useDispatch, useSelector } from "react-redux";
+import { selectedSidebarState, toggleSidebar } from "../../reducer/Reducer";
 const Navbar = () => {
+const dispatch = useDispatch()
+const sidebar = useSelector(selectedSidebarState)
+const handletoggleSidebar = () => {
+  console.log(sidebar);
+  dispatch(toggleSidebar())
+}
+
   return (
     <>
     <header>
@@ -10,7 +19,7 @@ const Navbar = () => {
                 <NavLink to="/"><h1>Logo</h1></NavLink>
             </div>
             <div className="list">
-                <ul className="list-items">
+                <ul className={!sidebar.isSidebarOpen ? "list-items" : "list-items open"}>
                     <li className="items">
                     <NavLink className="nav-links">Home</NavLink>
                     </li>
@@ -24,21 +33,16 @@ const Navbar = () => {
                     <NavLink className="nav-links">Video</NavLink>
                     </li>
                     <li className="items">
-                    <NavLink className="nav-links">Contact</NavLink>
-                    </li>
-                    <li className="items">
                     <NavLink className="nav-links">Profile</NavLink>
                     </li>
-                    <li className="items">
-                    <NavLink className="nav-links">Login</NavLink>
-                    </li>
+                  
                 </ul>
                 <div className="list">
                   <div className="items">
                     <Link className="nav-links">Logout</Link>
                     </div>
-                    <div className="">
-                    <span className="toggle-btn"><BsJustify/></span>
+                    <div>
+                    <span className="toggle-btn" onClick={handletoggleSidebar}><BsJustify/></span>
                     </div>
                     </div>
             </div> 

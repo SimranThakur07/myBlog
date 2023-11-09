@@ -5,10 +5,11 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 30px;
     position: fixed;
     width: 100vw;
      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     z-index: 999;
 }
 nav .list{
     display: flex;
@@ -17,10 +18,11 @@ nav .list{
 nav .list-items{
     display: flex;
     align-items: center;
+    margin-bottom: 0;
 }
 nav .list-items .items{
     padding: 0 15px;
-    font-size: 17px;
+    font-size: 17px; 
 }
 nav .items .nav-links{
     color: var(--color3);
@@ -28,11 +30,7 @@ nav .items .nav-links{
 nav .items .nav-links.active{
     color: var(--color4);
 }
-nav .items .nav-links:hover{
-    border: 2px solid var(--color4);
-    border-radius: 6px;
-    padding: 6px;
-}
+
 .toggle-btn{
     font-size: 26px;
     font-weight: 600;
@@ -52,7 +50,12 @@ nav .items .nav-links:hover{
         position: fixed;
         background-color: var(--color1);
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-right: -250px;
         transition: all 0.3s ease;
+        z-index: 999;
+    }
+    nav .list-items.open{
+       margin-right: 0;
     }
     nav .list-items .items{
         padding: 20px 25px;
@@ -69,5 +72,9 @@ nav .items .nav-links:hover{
 @media screen and (max-width: 480px) {
     nav .list-items{
         width: 100%;
+        margin-right: -100%;
+    }
+    nav .list-items.open{
+       margin-right: 0;
     }
 }

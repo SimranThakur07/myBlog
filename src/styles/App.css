@@ -13,8 +13,18 @@
 }
 li{
     list-style: none;
+    cursor: pointer;
 }
 a{
     color: unset;
     text-decoration: none;
+}
+.row>*{
+    padding: 0;
+}
+hr{
+    margin: 0;
+}
+.para{
+    text-align: justify;
 }
