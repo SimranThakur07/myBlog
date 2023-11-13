@@ -21,19 +21,19 @@ const handletoggleSidebar = () => {
             <div className="list">
                 <ul className={!sidebar.isSidebarOpen ? "list-items" : "list-items open"}>
                     <li className="items">
-                    <NavLink className="nav-links">Home</NavLink>
+                    <NavLink to="/" className="nav-links">Home</NavLink>
                     </li>
                     <li className="items">
-                    <NavLink className="nav-links">Blogs</NavLink>
+                    <NavLink to="/blog" className="nav-links">Blogs</NavLink>
                     </li>
                     <li className="items">
-                    <NavLink className="nav-links">Create</NavLink>
+                    <NavLink to="/create-blog" className="nav-links">Create</NavLink>
                     </li>
                     <li className="items">
-                    <NavLink className="nav-links">Video</NavLink>
+                    <NavLink to="/ablout" className="nav-links">About Us</NavLink>
                     </li>
                     <li className="items">
-                    <NavLink className="nav-links">Profile</NavLink>
+                    <NavLink to="/profile" className="nav-links">Profile</NavLink>
                     </li>
                   
                 </ul>

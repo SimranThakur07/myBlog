@@ -1,9 +1,10 @@
 import '../styles/Maincontext.css'
+import { BsFacebook, BsInstagram, BsYoutube, BsPinterest } from "react-icons/bs";
 
 const Maincontext = () => {
   return (
     <>
-    <div className=" text-center mt-5">
+    <div className="main-context text-center mt-5">
   <div className="row  justify-content-center">
     <div className="row col-lg-8 col-md-8 col-sm-8">
     <div className="col-12 col-sm-6 mb-3 d-flex justify-content-center" >
@@ -77,6 +78,12 @@ const Maincontext = () => {
     <hr />
     <h4>Follow Us</h4>
     <hr />
+    <ul className='d-flex justify-content-center social-media'>
+      <li className='mx-2'><BsFacebook/></li>
+      <li className='mx-2'><BsInstagram/></li>
+      <li className='mx-2'><BsYoutube/></li>
+      <li className='mx-2'><BsPinterest/></li>
+    </ul>
     </div> 
   </div>
   </div>
