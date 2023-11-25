@@ -21,3 +21,11 @@ margin-top: 55px;
     /* font-family: cursive; */
     letter-spacing: 4px;
 }
+@media screen and (max-width: 480px) {
+    .banner-section{
+        height: 300px;
+    }
+    .banner-section h3{
+        font-size: 38px;
+    }
+}

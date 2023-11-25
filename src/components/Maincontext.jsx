@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../styles/Maincontext.css'
 import { BsFacebook, BsInstagram, BsYoutube, BsPinterest } from "react-icons/bs";
 
@@ -13,7 +14,7 @@ const Maincontext = () => {
   <div className="card__content">
     <p className="card__title">Card Title</p>
     <p className="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    <button className='read-more mt-2'>Read More</button>
+    <Link className='read-more mt-2' to='/blog/1'>Read More</Link>
   </div>
 </div>
 
@@ -59,8 +60,8 @@ const Maincontext = () => {
 </div>
     </div> 
     </div>
-    <div className="row col-lg-4 col-md-4 col-sm-8">
-    <div className="row col-12 col-sm-12 mb-2 d-flex justify-content-center px-5">
+    <div className="row col-lg-4 col-md-4 col-sm-12 px-4">
+    {/* <div className="row col-12 col-sm-12 mb-2 d-flex justify-content-center"> */}
     <hr />
     <h4>About Me</h4>
     <hr />
@@ -85,7 +86,7 @@ const Maincontext = () => {
       <li className='mx-2'><BsPinterest/></li>
     </ul>
     </div> 
-  </div>
+  {/* </div> */}
   </div>
 </div> 
     </>

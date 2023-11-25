@@ -7,6 +7,7 @@ import Profile from './pages/Profile'
 import CreateBlog from './pages/CreateBlog'
 import Blog from './pages/Blog'
 import About from './pages/About'
+import Blogdetailspage from './pages/Blogdetailspage'
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
   <Route path='/create-blog' element={<CreateBlog/>}/>
   <Route path='/blog' element={<Blog/>}/>
   <Route path='/ablout' element={<About/>}/>
+  <Route path='/blog/:id' element={<Blogdetailspage/>} />
 </Routes>
 </BrowserRouter>
     </>

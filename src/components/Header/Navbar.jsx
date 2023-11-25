@@ -30,7 +30,7 @@ const handletoggleSidebar = () => {
                     <NavLink to="/create-blog" className="nav-links">Create</NavLink>
                     </li>
                     <li className="items">
-                    <NavLink to="/ablout" className="nav-links">About Us</NavLink>
+                    <NavLink to="/ablout" className="nav-links">About</NavLink>
                     </li>
                     <li className="items">
                     <NavLink to="/profile" className="nav-links">Profile</NavLink>

@@ -6,13 +6,13 @@ const Profile = () => {
     <>
     <Navbar/>
     <main>
-      <div className="profile-page  py-3">
-    <div className="col-12 col-sm-8 mb-3" >
-      <div className="bread-crumb d-flex justify-content-between mb-5 px-2" >
+      <div className="profile-page  py-3 blog-page">
+      <div className="row col-lg-8 col-md-8 col-sm-8">
+      <div className="bread-crumb d-flex justify-content-between align-items-center mb-5 px-2" >
         <h3>Profile Settings</h3>
         <button className="delete-profile">Delete Profile</button>
       </div>
-      <form className="col-8 col-sm-8 mb-3 " >
+      <form className="col-lg-8 col-sm-12 mb-3 " >
         <div className="profile-box">
         <img src="https://as1.ftcdn.net/v2/jpg/03/53/11/00/1000_F_353110097_nbpmfn9iHlxef4EDIhXB1tdTD0lcWhG9.jpg" alt=""  />
         </div>
@@ -42,7 +42,7 @@ const Profile = () => {
 </form>
 </div> 
     
-    <div className="row col-lg-4 col-md-4 col-sm-8 text-center">
+<div className="col-lg-4 col-md-4 col-sm-12 about-me text-center">
     <div className="row col-12 col-sm-12 mb-2 d-flex justify-content-center px-5">
     <hr />
     <h4>About Me</h4>
@@ -53,10 +53,10 @@ const Profile = () => {
     <h4>Category</h4>
     <hr />
     <ul className='d-flex justify-content-center'>
-      <li className='mx-4'>Travel</li>
-      <li className='mx-4'>Music</li>
-      <li className='mx-4'>Food</li>
-      <li className='mx-4'>Sport</li>
+      <li className='mx-2'>Travel</li>
+      <li className='mx-2'>Music</li>
+      <li className='mx-2'>Food</li>
+      <li className='mx-2'>Sport</li>
     </ul>
     <hr />
     <h4>Follow Us</h4>
@@ -70,6 +70,7 @@ const Profile = () => {
     </div> 
   </div>
   </div>
+  
     </main>
     </>
   )
