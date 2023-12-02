@@ -9,6 +9,9 @@ const Blog = () => {
     <div className="main-context text-center blog-page">
   {/* <div className="row  justify-content-center"> */}
     <div className="row col-lg-8 col-md-8 col-sm-12">
+    <div className="bread-crumb d-flex justify-content-between ms-5 mb-3 px-2" >
+        <h3>Blogs</h3>
+      </div>
     <div className=" col-sm-6 mb-3 d-flex justify-content-center" >
     <div className="card-box">
       <img src="https://images.unsplash.com/photo-1682695794947-17061dc284dd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
@@ -111,10 +114,10 @@ const Blog = () => {
     <h4>Follow Us</h4>
     <hr />
     <ul className='d-flex justify-content-center social-media'>
-      <li className='mx-2'><BsFacebook/></li>
-      <li className='mx-2'><BsInstagram/></li>
-      <li className='mx-2'><BsYoutube/></li>
-      <li className='mx-2'><BsPinterest/></li>
+      <li className='mx-4 text-primary'><BsFacebook/></li>
+      <li className='mx-4 text-danger-emphasis'><BsInstagram/></li>
+      <li className='mx-4 text-danger'><BsYoutube/></li>
+      <li className='mx-4 text-danger-emphasis'><BsPinterest/></li>
     </ul>
     </div> 
   </div>

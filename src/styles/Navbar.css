@@ -30,6 +30,10 @@ nav .items .nav-links{
 }
 nav .items .nav-links.active{
     color: var(--color4);
+    border-bottom: 3px solid var(--color4);
+    border-radius: 4px;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
 }
 
 .toggle-btn{

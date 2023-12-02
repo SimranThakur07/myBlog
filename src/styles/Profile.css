@@ -97,6 +97,13 @@
     padding: 0 2rem;
  }   
 }
+
+@media screen and (max-width: 780px) {
+    textarea{
+       
+        width: 90vw;
+    }
+}
 @media screen and (max-width: 480px) {
     .blog-img,
     textarea{

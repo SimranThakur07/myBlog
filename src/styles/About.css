@@ -22,8 +22,14 @@ video{
     height: 500px;
     margin-bottom: 2rem;
 }
+@media screen and (max-width: 965px) {
+    .about-img{
+        width: 80vw;
+        margin: auto;
+    }
+   
+}
 @media screen and (max-width: 480px) {
-    .about-img,
     .about-page p,
     .about-page .text-center{
         width: 80vw;

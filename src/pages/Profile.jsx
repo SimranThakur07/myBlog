@@ -8,7 +8,7 @@ const Profile = () => {
     <main>
       <div className="profile-page  py-3 blog-page">
       <div className="row col-lg-8 col-md-8 col-sm-8">
-      <div className="bread-crumb d-flex justify-content-between align-items-center mb-5 px-2" >
+      <div className="bread-crumb d-flex justify-content-between align-items-center mb-3 px-2" >
         <h3>Profile Settings</h3>
         <button className="delete-profile">Delete Profile</button>
       </div>
@@ -62,10 +62,10 @@ const Profile = () => {
     <h4>Follow Us</h4>
     <hr />
     <ul className='d-flex justify-content-center social-media'>
-      <li className='mx-2'><BsFacebook/></li>
-      <li className='mx-2'><BsInstagram/></li>
-      <li className='mx-2'><BsYoutube/></li>
-      <li className='mx-2'><BsPinterest/></li>
+      <li className='mx-4 text-primary'><BsFacebook/></li>
+      <li className='mx-4 text-danger-emphasis'><BsInstagram/></li>
+      <li className='mx-4 text-danger'><BsYoutube/></li>
+      <li className='mx-4 text-danger-emphasis'><BsPinterest/></li>
     </ul>
     </div> 
   </div>

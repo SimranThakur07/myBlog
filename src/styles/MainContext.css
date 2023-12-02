@@ -73,3 +73,12 @@
   .social-media li{
     font-size: 22px;
 }
+p{
+  text-align: justify;
+}
+.bread-crumb{
+  width: 60vw;
+}
+.bread-crumb h3{
+  color: rgb(250, 101, 176);
+}

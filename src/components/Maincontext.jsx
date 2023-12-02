@@ -59,6 +59,16 @@ const Maincontext = () => {
   </div>
 </div>
     </div> 
+    <div className="col-12 col-sm-6 mb-3 d-flex justify-content-center">
+    <div className="card-box">
+      <img src="https://plus.unsplash.com/premium_photo-1676140637167-b0911bf6adda?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+  <div className="card__content">
+    <p className="card__title">Card Title</p>
+    <p className="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <button className='read-more mt-2'>Read More</button>
+  </div>
+</div>
+    </div> 
     </div>
     <div className="row col-lg-4 col-md-4 col-sm-12 px-4">
     {/* <div className="row col-12 col-sm-12 mb-2 d-flex justify-content-center"> */}
@@ -80,10 +90,10 @@ const Maincontext = () => {
     <h4>Follow Us</h4>
     <hr />
     <ul className='d-flex justify-content-center social-media'>
-      <li className='mx-2'><BsFacebook/></li>
-      <li className='mx-2'><BsInstagram/></li>
-      <li className='mx-2'><BsYoutube/></li>
-      <li className='mx-2'><BsPinterest/></li>
+      <li className='mx-4 text-primary'><BsFacebook/></li>
+      <li className='mx-4 text-danger-emphasis'><BsInstagram/></li>
+      <li className='mx-4 text-danger'><BsYoutube/></li>
+      <li className='mx-4 text-danger-emphasis'><BsPinterest/></li>
     </ul>
     </div> 
   {/* </div> */}

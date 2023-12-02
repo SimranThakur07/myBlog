@@ -6,7 +6,7 @@ import '../styles/Blog.css'
 const Blogdetailspage = () => {
   return (
     <>
-    <Navbar/>
+    <Navbar/> 
     <div className="main-context text-center blog-page">
   {/* <div className="row  justify-content-center"> */}
     <div className=" col-lg-8 col-md-8 col-sm-12 px-2">
@@ -20,7 +20,7 @@ const Blogdetailspage = () => {
         <div>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi voluptates doloremque eum dicta hic, atque eligendi porro aliquam dolor consequuntur aperiam, accusantium, adipisci quis! Deserunt autem provident, nihil, odit eius nemo magni quos quas dolore tempora fuga pariatur repellendus non iure dignissimos. Nulla laboriosam mollitia dolorum animi aut necessitatibus illo exercitationem quos natus enim, culpa repellat quia ea cum reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores sequi placeat architecto tempora eos eum ducimus, cupiditate obcaecati assumenda culpa magnam fuga dolor eaque. Iusto quos quod culpa illo reiciendis, aperiam ex asperiores, quasi est, accusantium quo totam distinctio dolores! </p>
         </div>
-    </div>
+    </div>  
     <div className="col-lg-4 col-md-4 col-sm-12 about-me">
     <div className="row col-12 col-sm-12 mb-2 d-flex justify-content-center px-5">
     <hr />
@@ -41,10 +41,10 @@ const Blogdetailspage = () => {
     <h4>Follow Us</h4>
     <hr />
     <ul className='d-flex justify-content-center social-media'>
-      <li className='mx-2'><BsFacebook/></li>
-      <li className='mx-2'><BsInstagram/></li>
-      <li className='mx-2'><BsYoutube/></li>
-      <li className='mx-2'><BsPinterest/></li>
+      <li className='mx-4 text-primary'><BsFacebook/></li>
+      <li className='mx-4 text-danger-emphasis'><BsInstagram/></li>
+      <li className='mx-4 text-danger'><BsYoutube/></li>
+      <li className='mx-4 text-danger-emphasis'><BsPinterest/></li>
     </ul>
     </div> 
   </div>

@@ -7,9 +7,15 @@ const Navbar = () => {
 const dispatch = useDispatch()
 const sidebar = useSelector(selectedSidebarState)
 const handletoggleSidebar = () => {
-  console.log(sidebar);
   dispatch(toggleSidebar())
 }
+
+const closeSidebar = () => {
+  if (sidebar.isSidebarOpen) {
+    handletoggleSidebar();
+  }
+};
+
 
   return (
     <>
@@ -21,19 +27,19 @@ const handletoggleSidebar = () => {
             <div className="list">
                 <ul className={!sidebar.isSidebarOpen ? "list-items" : "list-items open"}>
                     <li className="items">
-                    <NavLink to="/" className="nav-links">Home</NavLink>
+                    <NavLink to="/" className="nav-links" onClick={closeSidebar}>Home</NavLink>
                     </li>
                     <li className="items">
-                    <NavLink to="/blog" className="nav-links">Blogs</NavLink>
+                    <NavLink to="/blog" className="nav-links"  onClick={closeSidebar}>Blogs</NavLink>
                     </li>
                     <li className="items">
-                    <NavLink to="/create-blog" className="nav-links">Create</NavLink>
+                    <NavLink to="/create-blog" className="nav-links"  onClick={closeSidebar}>Create</NavLink>
                     </li>
                     <li className="items">
-                    <NavLink to="/ablout" className="nav-links">About</NavLink>
+                    <NavLink to="/ablout" className="nav-links"  onClick={closeSidebar}>About</NavLink>
                     </li>
                     <li className="items">
-                    <NavLink to="/profile" className="nav-links">Profile</NavLink>
+                    <NavLink to="/profile" className="nav-links"  onClick={closeSidebar}>Profile</NavLink>
                     </li>
                   
                 </ul>
