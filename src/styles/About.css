@@ -22,9 +22,17 @@ video{
     height: 500px;
     margin-bottom: 2rem;
 }
+.blog-list{
+    width: 28vw;
+    padding: 0 30px;
+}
+.blog-list img{
+    width: 100%;
+}
 @media screen and (max-width: 965px) {
     .about-img{
         width: 80vw;
+        height: 40vh;
         margin: auto;
     }
    
@@ -40,5 +48,9 @@ video{
     }
     video{
         height: 200px;
+    }
+    .blog-list{
+        width: 80vw;
+        padding: 0;
     }
 }

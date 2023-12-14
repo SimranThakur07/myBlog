@@ -30,8 +30,8 @@ const CreateBlog = () => {
   <button type="submit" className="btn btn-primary mt-4">Publish</button>
         </form>
         </div> 
-        <div className="col-lg-4 col-md-4 col-sm-12 about-me text-center">
-    <div className="row col-12 col-sm-12 mb-2 d-flex justify-content-center px-5">
+        <div className="col-lg-4 col-md-4 col-sm-12 about-me text-center blog-list">
+    
     <hr />
     <h4>About Me</h4>
     <hr />
@@ -56,7 +56,6 @@ const CreateBlog = () => {
       <li className='mx-4 text-danger-emphasis'><BsPinterest/></li>
     </ul>
     </div> 
-  </div>
   </div>
     </main>
     </>

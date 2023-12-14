@@ -94,8 +94,8 @@ const Blog = () => {
 </div>
     </div> 
     </div>
-    <div className="col-lg-4 col-md-4 col-sm-12 about-me">
-    <div className="row col-12 col-sm-12 mb-2 d-flex justify-content-center px-5">
+    <div className="row col-lg-4 col-md-4 col-sm-12 about-me blog-list">
+    <div >
     <hr />
     <h4>About Me</h4>
     <hr />

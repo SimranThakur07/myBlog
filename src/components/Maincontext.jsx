@@ -73,7 +73,7 @@ const Maincontext = () => {
     <div className="row col-lg-4 col-md-4 col-sm-12 px-4">
     {/* <div className="row col-12 col-sm-12 mb-2 d-flex justify-content-center"> */}
     <hr />
-    <h4>About Me</h4>
+    <h4>About Me</h4> 
     <hr />
     <img src="https://images.unsplash.com/photo-1496134732667-ae8d2853a045?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""  />
     <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error delectus quia odit autem voluptatibus accusamus quos nobis voluptatem minima debitis asperiores ut natus corrupti, dolorem, atque suscipit fugiat quam aperiam.</p>

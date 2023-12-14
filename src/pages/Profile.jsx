@@ -1,24 +1,31 @@
+import { useState } from "react";
 import Navbar from "../components/Header/Navbar"
 import "../styles/Profile.css"
 import { BsFacebook, BsInstagram, BsYoutube, BsPinterest } from "react-icons/bs";
 const Profile = () => {
+const [file, setfile] = useState("")
+const url = "https://as1.ftcdn.net/v2/jpg/03/53/11/00/1000_F_353110097_nbpmfn9iHlxef4EDIhXB1tdTD0lcWhG9.jpg"
+const handleChange = (e) => {
+  console.log(e.target.files[0]);
+  setfile(URL.createObjectURL(e.target.files[0]))
+}
   return (
     <>
     <Navbar/>
     <main>
       <div className="profile-page  py-3 blog-page">
-      <div className="row col-lg-8 col-md-8 col-sm-8">
+      <div className="row col-lg-8 col-md-8 col-sm-12">
       <div className="bread-crumb d-flex justify-content-between align-items-center mb-3 px-2" >
         <h3>Profile Settings</h3>
         <button className="delete-profile">Delete Profile</button>
       </div>
       <form className="col-lg-8 col-sm-12 mb-3 " >
         <div className="profile-box">
-        <img src="https://as1.ftcdn.net/v2/jpg/03/53/11/00/1000_F_353110097_nbpmfn9iHlxef4EDIhXB1tdTD0lcWhG9.jpg" alt=""  />
+        <img src={file || url} alt=""  />
         </div>
       <div className="mb-3 profile-img">
     <label htmlFor="profile" className="form-label">Edit Profile</label>
-    <input type="file" className="form-control" id="profile" name="profile" aria-describedby="name"/>
+    <input type="file" className="form-control" id="profile" name="profile" aria-describedby="name" onChange={handleChange}/>
   </div>
   <div className="mb-3">
     <label htmlFor="name" className="form-label">Display Name</label>
@@ -42,8 +49,8 @@ const Profile = () => {
 </form>
 </div> 
     
-<div className="col-lg-4 col-md-4 col-sm-12 about-me text-center">
-    <div className="row col-12 col-sm-12 mb-2 d-flex justify-content-center px-5">
+<div className="col-lg-4 col-md-4 col-sm-12 about-me text-center blog-list">
+   
     <hr />
     <h4>About Me</h4>
     <hr />
@@ -69,7 +76,7 @@ const Profile = () => {
     </ul>
     </div> 
   </div>
-  </div>
+ 
   
     </main>
     </>

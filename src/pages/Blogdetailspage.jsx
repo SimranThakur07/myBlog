@@ -8,21 +8,19 @@ const Blogdetailspage = () => {
     <>
     <Navbar/> 
     <div className="main-context text-center blog-page">
-  {/* <div className="row  justify-content-center"> */}
     <div className=" col-lg-8 col-md-8 col-sm-12 px-2">
         <div className="blog-details-img">
         <img src="https://images.unsplash.com/photo-1682695794947-17061dc284dd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
         </div>
-        <div className="title d-flex justify-content-between mt-3">
+        <div className="title d-flex justify-content-between mt-3 px-2">
             <h2>Title</h2>
             <span>25-11-2023</span>
         </div>
-        <div>
+        <div className="px-2">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi voluptates doloremque eum dicta hic, atque eligendi porro aliquam dolor consequuntur aperiam, accusantium, adipisci quis! Deserunt autem provident, nihil, odit eius nemo magni quos quas dolore tempora fuga pariatur repellendus non iure dignissimos. Nulla laboriosam mollitia dolorum animi aut necessitatibus illo exercitationem quos natus enim, culpa repellat quia ea cum reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores sequi placeat architecto tempora eos eum ducimus, cupiditate obcaecati assumenda culpa magnam fuga dolor eaque. Iusto quos quod culpa illo reiciendis, aperiam ex asperiores, quasi est, accusantium quo totam distinctio dolores! </p>
         </div>
     </div>  
-    <div className="col-lg-4 col-md-4 col-sm-12 about-me">
-    <div className="row col-12 col-sm-12 mb-2 d-flex justify-content-center px-5">
+    <div className="col-lg-4 col-md-4 col-sm-12 about-me blog-list">
     <hr />
     <h4>About Me</h4>
     <hr />
@@ -47,8 +45,6 @@ const Blogdetailspage = () => {
       <li className='mx-4 text-danger-emphasis'><BsPinterest/></li>
     </ul>
     </div> 
-  </div>
-  {/* </div> */}
 </div> 
     </>
   )
